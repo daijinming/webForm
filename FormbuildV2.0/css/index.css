@@ -1,0 +1,402 @@
+.container {
+    margin-top: 10px;
+}
+
+#dispicker select.form-control {
+    width: 46%;
+    display: inline-block;
+
+}
+
+#dispicker select.form-control:first-child {
+    margin-right: 6%;
+}
+
+#allmap {
+    width: 560px;
+    height: 360px;
+    border: 1px solid #ddd;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+#searchResultPanel {
+    border: 1px solid #C0C0C0;
+    width: 150px;
+    height: auto;
+    display: none;
+}
+
+.input-group .form-control {
+    top: 1px;
+}
+
+.startTime,
+.endTime {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+span.tipMes {
+    color: #999;
+}
+
+#my_file {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#target img {
+    max-width: 100%;
+}
+
+#target img.hide {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.modal-header .close {
+    margin-top: -10px;
+}
+
+.modal-body {
+    padding-top: 11px;
+    padding-left: 0;
+}
+
+.jcrop-holder {
+    width: 800px;
+    height: 450px;
+    position: relative;
+    background-color: black;
+}
+
+#myImg {
+    text-align: center;
+    width: 804px;
+    height: 454px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 290;
+    cursor: crosshair;
+}
+
+#myImg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#active_catrgory,
+#category_item {
+    padding-top: 12px;
+}
+
+.info-sign {
+    font-size: 20px;
+    font-weight: normal;
+    color: #999;
+    margin-left: 20px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.col-sm-10:before {
+    content: "";
+    display: table;
+}
+
+.info-sign-detail {
+    background: #5E5E5E;
+    color: #ffffff;
+    display: inline-block;
+
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+}
+
+.info-sign {
+    margin-left: 15px;
+}
+
+.info-sign-detail {
+    position: absolute;
+    z-index: 100;
+}
+
+.info-sign-detail.o {
+    /*right: -11rem;*/
+    bottom: -4rem;
+    padding-bottom: 10px;
+    padding: 8px 10px;
+}
+
+.table-header.ticket_header {
+    margin-top: 3rem;
+}
+
+.table-header label.control-label {
+    text-align: center;
+}
+
+.table-header.ticket_header .col-sm-10 {
+    background: #EEEEEE;
+}
+
+.table-header .col-sm-10 {
+    overflow: hidden;
+}
+
+.table-header:last-child .col-sm-10 {
+
+    border: none;
+}
+
+button.add_free_ticket,
+button.add_charge_ticket {
+    min-width: 96px;
+    background: #EEEEEE;
+}
+
+.table-header .col-sm-10 {
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.table-header.free_ticket_button .col-sm-10 {
+    border: none;
+}
+
+.table-header .col-20 {
+    float: left;
+    width: 20%;
+    border-right: 1px solid #ddd;
+}
+
+.table-header .col-10:not(:last-child) {
+    width: 10%;
+    float: left;
+    border-right: 1px solid #ddd;
+}
+
+.table-header>label {
+    padding-top: 12px;
+}
+
+.event_ticket_detail {
+    padding: 1rem;
+}
+
+.event_ticket_detail .form-inline {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.event_ticket_detail .form-inline label {
+    width: 10%;
+    padding-top: 1rem;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.event_ticket_detail .form-inline input[type=text] {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+#category_box,
+#category_item_box {
+    border: 1px solid #ddd;
+    padding: 20px 30px 0px;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+#category_box ul li,
+#category_item_box ul li {
+    list-style: none;
+    border: 1px dashed #a0a0a0;
+    color: #a0a0a0;
+    padding: 4px 20px;
+    float: left;
+    margin-right: 9px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#category_box ul li.active,
+#category_item_box ul li.active {
+    background: #e5e5e5 none repeat scroll 0 0;
+    cursor: default;
+}
+
+#category_box:after,
+.topUl ul:after,
+.bottomUl ul:after,
+#category_item_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.selectClick,
+.itemClick {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.selectClick li,
+.itemClick li {
+    margin-right: 15px;
+    border: 1px dashed #a0a0a0;
+    color: #a0a0a0;
+    padding: 4px 20px;
+    background: #e5e5e5 none repeat scroll 0 0;
+    position: relative;
+
+}
+
+.selectClick li span,
+.itemClick li span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    color: #999;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.remove_item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.expand {
+    height: 30px;
+    line-height: 30px;
+}
+
+.expand input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.expand input[type=checkbox]:checked::before {
+    content: "";
+    display: block;
+    background: #00dd1c;
+}
+
+.help-explain {
+    color: #999;
+}
+
+.saveInfo {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.add_info {
+    height: 40px;
+    line-height: 48px;
+}
+
+.form-horizontal {
+    padding-right: 80px;
+}
+
+div.aside .row {
+    margin-bottom: 10px;
+}
+
+div.aside button>span.glyphicon:first-child {
+    float: left;
+}
+
+div.bottom-form span.add_plus {
+    float: right;
+}
+
+.set_form,
+    {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ticket_num input,
+.free_ticket input,
+.ticket_price input {
+    width: 50%;
+    text-align: center;
+}
+
+.form-horizontal.set_form:hover {
+    background: #ddd;
+}
+
+.set_form_content {
+    display: none;
+}
+
+.set_form_content.active {
+    display: block;
+}
+
+#create-form {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+#create-form .form-group {
+    height: auto;
+    line-height: 35px;
+}
+
+#create-form .form-group>.col-sm-7 {
+    padding-top: 7px;
+}
+
+#create-form .form-group>.col-sm-1 {
+    padding-top: 6px;
+    padding-left: 0;
+}
+
+#create-form .form-group .row .glyphicon-remove-circle {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    font-size: 1.6rem;
+}
+
+#create-form .form-group .row>.col-sm-3 {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:790px) {
+    input,
+    select,
+    .input-group {
+        margin-bottom: 10px;
+    }
+}
